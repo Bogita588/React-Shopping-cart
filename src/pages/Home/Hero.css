@@ -1,70 +1,78 @@
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the top of the flex container */
-    padding: 20px;
-  }
-  
-  .hero-content {
-    display: flex;
-    flex: 1;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px; /* Adjust the height as needed */
+}
+
+.header-content {
+  flex: 1;
+  margin-left: 40px;
+  padding-right: 30px; /* Adjust as needed */
+}
+
+.header-text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: ultra-bold;
+  font-style: normal;
+  color: #007bff;
+}
+
+.header-text p {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-input button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.header-input button:hover{
+  background: rgb(213, 45, 73);
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image img {
+  width: 75%; /* Occupy 75% of the container */
+  height: auto;
+  max-height: 75%; /* Limit height to maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: auto; /* Reset height for smaller screens */
     flex-direction: column;
+    text-align: center;
   }
-  
-  .hero-text {
-    margin-bottom: 20px;
+
+  .header-content {
+    padding-right: 0;
+   
   }
-  
-  .hero-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+  .header-image {
+    margin-top: 20px;
   }
-  
-  .hero-text p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .hero-text button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .hero-image img {
+
+  .header-image img {
+    width: 100%; /* Occupy full width on smaller screens */
     max-width: 100%;
   }
-  
-  .thumbnail-images {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .thumbnail-images img {
-    margin-top: 10px; /* Add margin between thumbnail images */
-    cursor: pointer;
-  }
-  
-  .selected-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  @media (min-width: 768px) {
-    .hero {
-      align-items: center;
-    }
-  
-    .thumbnail-images {
-      flex-direction: row; /* Display thumbnail images in a row */
-      margin-top: 0; /* Reset margin top */
-    }
-  
-    .thumbnail-images img {
-      margin-top: 0; /* Reset margin top for thumbnail images */
-      margin-right: 10px; /* Add margin between thumbnail images */
-    }
-  }
-  
+}

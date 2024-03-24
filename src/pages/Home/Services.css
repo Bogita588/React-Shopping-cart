@@ -1,0 +1,43 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px 0;
+  }
+  
+  .service {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .service:hover {
+    background-color: #e2cbcb; /* Change background color on hover */
+  }
+  
+  .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007bff; /* Change icon color */
+  }
+  
+  .service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #d72267; /* Change title color */
+  }
+  
+  .service p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #040303; /* Change description color */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .services {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
