@@ -1,0 +1,100 @@
+.shopTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  place-items: center;
+}
+
+@media (max-width: 2000px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
+@media (max-width: 1600px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product {
+  border-radius: 15px;
+  width: 200px;
+  height: 350px;
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 300px;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBttn {
+  background-color: hsl(195, 86%, 46%);
+  color: white;
+  font-weight: bolder;
+  border: 2px solid rgb(212, 202, 202);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+  background-color: hsl(20, 89%, 47%);
+ 
+  cursor: pointer;
+}

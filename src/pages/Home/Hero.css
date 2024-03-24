@@ -1,0 +1,70 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top of the flex container */
+    padding: 20px;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .hero-text {
+    margin-bottom: 20px;
+  }
+  
+  .hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .thumbnail-images img {
+    margin-top: 10px; /* Add margin between thumbnail images */
+    cursor: pointer;
+  }
+  
+  .selected-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      align-items: center;
+    }
+  
+    .thumbnail-images {
+      flex-direction: row; /* Display thumbnail images in a row */
+      margin-top: 0; /* Reset margin top */
+    }
+  
+    .thumbnail-images img {
+      margin-top: 0; /* Reset margin top for thumbnail images */
+      margin-right: 10px; /* Add margin between thumbnail images */
+    }
+  }
+  

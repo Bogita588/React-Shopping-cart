@@ -1,0 +1,73 @@
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+    padding-top: 100px; /* Adjust as needed */
+  }
+  
+  .collection-text {
+    font-size: 1.5rem;
+    color: #ff6347;
+  }
+  
+  .title {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
+  .new-arrival {
+    background-color: #fff;
+    white-space: nowrap;
+    padding-right: 100px; /* Adjust as needed */
+  }
+  
+  .brand-name {
+    color: #ff4500;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+  
+  .statistics {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+  }
+  
+  .value {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-image-container {
+    position: relative;
+    flex: 1;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .shoe-cards {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    display: flex;
+    gap: 16px;
+  }
+  
